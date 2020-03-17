@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 03</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Kích thước của mảng"));
+    let a = [];
+    let sum = 0;
+
+    function isNumber(n) { return !isNaN(parseFloat(n)) && !isNaN(n - 0)}
+
+    for (let i = 0; i < n; i++){
+        a[i] = prompt("Phần tử thứ " + i + " của mảng");
+        if (isNumber(a[i]) === true){
+            sum++;
+        }
+    }
+    document.write("Số ký tự số trong mảng là: " + sum);
+</script>
+</body>
+</html>
